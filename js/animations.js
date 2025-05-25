@@ -14,6 +14,7 @@ const initAnimation = () => {
       repeat: -1,
       yoyo: true,
     },
+    paused: true,
   })
 
   controlTweens(fredsTween)

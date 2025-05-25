@@ -1,11 +1,12 @@
 const navigation = `
 <nav>
     <ul class="nav-links">
-      <li><a href="/" data-page="home">Home</a></li>
-      <li><a href="/from-and-to.html" data-page="from-and-to">From and From To</a></li>
-      <li><a href="/delay.html" data-page="delay">Delay and Repeat</a></li>
-      <li><a href="/stagger.html" data-page="stagger">Stagger</a></li>
-      <li><a href="/glitch.html" data-page="glitch">Glitch</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/from-and-to.html">From and From To</a></li>
+      <li><a href="/delay.html">Delay and Repeat</a></li>
+      <li><a href="/stagger.html">Stagger</a></li>
+      <li><a href="/glitch.html">Glitch</a></li>
+      <li><a href="/transform.html">Transform Origin</a></li>
     </ul>
 </nav>
 `
