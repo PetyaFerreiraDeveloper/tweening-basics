@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>GSAP - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation will be injected here -->
+    </header>
+    <main>
+      <h1 class="title">This is a small site for testing GSAP animations</h1>
+
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+
+      <div>
+        <img
+          class="green"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred.svg"
+          alt=""
+          width="150"
+        />
+      </div>
+
+      <div>
+        <img
+          class="pink"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-pink.svg"
+          alt=""
+          width="150"
+        />
+      </div>
+    </main>
+
+    <!-- GSAP 3-->
+    <script src="js/gsap/gsap.min.js"></script>
+
+    <!-- Navigation Component -->
+    <script type="module">
+      import { initNavigation } from "./js/components/navigation.js"
+      document.addEventListener("DOMContentLoaded", initNavigation)
+    </script>
+
+    <!-- my custom animation script that I wrote -->
+    <script type="module" src="js/animations.js"></script>
+  </body>
+</html>

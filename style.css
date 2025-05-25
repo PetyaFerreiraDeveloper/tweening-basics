@@ -1,0 +1,90 @@
+body {
+  background: #0a5b90;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #02263d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #02263d;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      line-height: 1;
+      display: block;
+      height: 100%;
+
+      &:hover {
+        background-color: #0d71b3;
+      }
+
+      &.active {
+        background-color: #0a5b90;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 100px;
+
+  .title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .controls button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+  }
+}
+
+.demo {
+  position: relative;
+  margin: 0 auto;
+  width: 800px;
+  height: 410px;
+  border: 1px solid #333;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
+}
+
+.freds {
+  position: relative;
+  top: 300px;
+  left: 20px;
+}
+
+.freds img {
+  width: 122px;
+}

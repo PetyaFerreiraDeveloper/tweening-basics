@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>GSAP - Delay and Repeat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/from-and-to.html">From and From To</a></li>
+          <li><a href="/delay.html" class="active">Delay and Repeat</a></li>
+          <li><a href="/stagger.html">Stagger</a></li>
+          <li><a href="/glitch.html">Glitch</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="title">This is a small site for testing GSAP animations</h1>
+
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+    </main>
+
+    <!-- GSAP 3-->
+    <script src="js/gsap/gsap.min.js"></script>
+
+    <!-- my custom animation script that I wrote -->
+    <script src="js/glitch.js" type="module"></script>
+  </body>
+</html>
