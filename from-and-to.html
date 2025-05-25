@@ -7,21 +7,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li>
-            <a href="/from-and-to.html" class="active">From and From To</a>
-          </li>
-          <li><a href="/delay.html">Delay and Repeat</a></li>
-          <li><a href="/stagger.html">Stagger</a></li>
-          <li><a href="/glitch.html">Glitch</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header></header>
     <main>
-      <h1 class="title">This is a small site for testing GSAP animations</h1>
+      <h1 class="title">Animation with from and fromTo</h1>
 
       <!-- Control Buttons -->
       <div class="controls">
@@ -43,6 +31,9 @@
 
     <!-- GSAP 3-->
     <script src="js/gsap/gsap.min.js"></script>
+
+    <!-- navigation component -->
+    <script type="module" src="js/navigation.js"></script>
 
     <!-- my custom animation script that I wrote -->
     <script type="module" src="js/from-and-to.js"></script>

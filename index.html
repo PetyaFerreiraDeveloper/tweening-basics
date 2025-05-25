@@ -21,22 +21,34 @@
         <button class="reverse">Reverse</button>
       </div>
 
-      <div>
-        <img
-          class="green"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred.svg"
-          alt=""
-          width="150"
-        />
-      </div>
-
-      <div>
-        <img
-          class="pink"
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-pink.svg"
-          alt=""
-          width="150"
-        />
+      <div class="demo">
+        <div class="freds">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-purple.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-blue.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-pink.svg"
+            alt=""
+            class="pink"
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-orange.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-red.svg"
+            alt=""
+          />
+        </div>
       </div>
     </main>
 
@@ -44,10 +56,7 @@
     <script src="js/gsap/gsap.min.js"></script>
 
     <!-- Navigation Component -->
-    <script type="module">
-      import { initNavigation } from "./js/components/navigation.js"
-      document.addEventListener("DOMContentLoaded", initNavigation)
-    </script>
+    <script type="module" src="js/navigation.js"></script>
 
     <!-- my custom animation script that I wrote -->
     <script type="module" src="js/animations.js"></script>
