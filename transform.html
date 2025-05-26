@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>GSAP - Delay and Repeat</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="title">Demonstrate how transfrom origin works</h1>
+      <h2 class="subtitle">
+        transformOrigin is set with a pair of horizontal and vertical values
+      </h2>
+
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+
+      <div class="transform-blue-box">
+        <h3>Blue Box Example</h3>
+        <div class="box"></div>
+        <div class="labels"></div>
+        <div class="nav">
+          <div class="radios">
+            <div>
+              <input
+                type="radio"
+                name="property"
+                value="pixels"
+                id="pixels"
+                checked
+              />
+              <label for="pixels">pixels</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="property"
+                value="percents"
+                id="percents"
+              />
+              <label for="percents">percents</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="property"
+                value="keywords"
+                id="keywords"
+              />
+              <label for="keywords">keywords</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden">
+        <div class="label">left top</div>
+      </div>
+
+      <div class="transform-jeep">
+        <h3>Jeep Example</h3>
+        <img
+          class="truck"
+          src="https://assets.codepen.io/32887/truck-final.png"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <!-- GSAP 3-->
+    <script src="js/gsap/gsap.min.js"></script>
+
+    <!-- navigation component -->
+    <script type="module" src="js/navigation.js"></script>
+
+    <!-- my custom animation script that I wrote -->
+    <script type="module" src="js/transform.js"></script>
+    <script type="module" src="js/jeep.js"></script>
+  </body>
+</html>
