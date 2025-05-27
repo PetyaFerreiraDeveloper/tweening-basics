@@ -2,6 +2,7 @@ body {
   background: #0a5b90;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -47,7 +48,8 @@ header {
 main {
   margin-top: 100px;
 
-  .title, .subtitle {
+  .title,
+  .subtitle {
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -148,7 +150,8 @@ main {
     justify-content: center;
     gap: 1rem;
 
-    h2 {
+    h2,
+    h3 {
       color: white;
     }
 
@@ -197,6 +200,55 @@ main {
       text-align: center;
       font-size: 1.5rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  .transform-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    background-color: #3d0235;
+
+    h3 {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .box-circle {
+      width: 200px;
+      height: 200px;
+      background: dodgerblue;
+      position: relative;
+    }
+
+    .dot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: rgba(255, 20, 20, 0.6);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100;
+    }
+
+    .navigation-circle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #02263d;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      width: 200px;
     }
   }
 }

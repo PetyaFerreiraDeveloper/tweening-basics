@@ -3,11 +3,7 @@ export const initAnimation = () => {
   if (!container) return
 
   console.clear()
-  const box = document.querySelector(".box")
-  const dot = document.querySelector(".dot")
-  const nav = document.querySelector(".nav")
   const labels = document.querySelector(".labels")
-  const output = document.querySelector(".output")
   let property = document.querySelector('input[name="property"]:checked').value
 
   const values = {

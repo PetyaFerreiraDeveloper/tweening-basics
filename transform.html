@@ -71,6 +71,38 @@
           alt=""
         />
       </div>
+
+      <div class="transform-circle">
+        <h3>Dynamically place transformOrigin</h3>
+
+        <div class="box-circle">
+          <div class="dot"></div>
+        </div>
+        <div class="navigation-circle">
+          <div class="radios">
+            <div>
+              <input
+                type="radio"
+                name="circle-property"
+                value="rotation"
+                id="rotation"
+                checked
+              />
+              <label for="rotation">rotation</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="circle-property"
+                value="scale"
+                id="scale"
+              />
+              <label for="scale">scale</label>
+            </div>
+          </div>
+          <div class="output">100<span>px</span> 100<span>px</span></div>
+        </div>
+      </div>
     </main>
 
     <!-- GSAP 3-->
@@ -82,5 +114,6 @@
     <!-- my custom animation script that I wrote -->
     <script type="module" src="js/transform.js"></script>
     <script type="module" src="js/jeep.js"></script>
+    <script type="module" src="js/transform-circle.js"></script>
   </body>
 </html>
