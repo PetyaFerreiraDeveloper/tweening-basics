@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #063f01;
+    --secondary-color: #3a452f;
+    --active-color: #063f01;
+}
+
+body {
+    background: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            line-height: 1;
+            display: block;
+            height: 100%;
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+
+            &.active {
+                background-color: var(--active-color);
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 100px;
+
+    .title,
+    .subtitle {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .controls {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .controls button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: gray;
+        color: white;
+    }
+
+    .home {
+        margin-top: 3rem;
+        overflow: hidden;
+        position: relative;
+        width: 800px;
+        height: 410px;
+        border: 1px solid #333;
+        background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
+
+        .home-title {
+            position: absolute;
+            top: 120px;
+            left: 40px;
+        }
+
+        .home-freds {
+            position: absolute;
+            top: 250px;
+            left: 20px;
+
+            img {
+                width: 122px;
+            }
+        }
+
+        .home-time {
+            position: absolute;
+            top: 25px;
+            right: 0;
+        }
+    }
+}

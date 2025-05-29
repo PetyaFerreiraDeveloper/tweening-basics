@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>GSAP - Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navigation will be injected here -->
+    </header>
+    <main>
+      <h1 class="title">This is a small site for testing GSAP tween animations</h1>
+
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+
+      <div class="demo">
+        <div class="freds">
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-purple.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-blue.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-pink.svg"
+            alt=""
+            class="pink"
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-orange.svg"
+            alt=""
+          />
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/fred-red.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- GSAP 3-->
+    <script src="../gsap/gsap.min.js"></script>
+
+    <!-- Navigation Component -->
+    <script type="module" src="js/navigation.js"></script>
+
+    <!-- my custom animation script that I wrote -->
+    <script type="module" src="js/animations.js"></script>
+  </body>
+</html>
