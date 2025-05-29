@@ -2,7 +2,8 @@ const navigation = `
 <nav>
     <ul class="nav-links">
       <li><a href="/timeline/">Home</a></li>
-      <li><a href="/timeline/from-and-to.html">From and From To</a></li>
+      <li><a href="/timeline/position.html">Position</a></li>
+      <li><a href="/timeline/labels.html">Labels</a></li>
   
     </ul>
 </nav>

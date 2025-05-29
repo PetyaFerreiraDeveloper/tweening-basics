@@ -1,4 +1,4 @@
-export const controlTimeline = (timeline) => {
+export const controlTimeline = (timeline, startLabel) => {
   const playBtn = document.querySelector(".play")
   const pauseBtn = document.querySelector(".pause")
   const reverseBtn = document.querySelector(".reverse")
@@ -10,8 +10,8 @@ export const controlTimeline = (timeline) => {
   }
 
   playBtn.onclick = () => {
-    console.log(timeline)
-    timeline.play()
+    // If startLabel is provided, play from that position, otherwise just play
+    startLabel ? timeline.play(startLabel) : timeline.play()
   }
   pauseBtn.onclick = () => timeline.pause()
   reverseBtn.onclick = () => timeline.reverse()
