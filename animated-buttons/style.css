@@ -1,0 +1,142 @@
+:root {
+    --primary-color: #063f01;
+    --secondary-color: #3a452f;
+    --ternary-color: #05c1b4;
+    --active-color: #063f01;
+}
+
+body {
+    background: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            line-height: 1;
+            display: block;
+            height: 100%;
+
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+
+            &.active {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 100px;
+
+    .title,
+    .subtitle {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .controls {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .controls button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: gray;
+        color: white;
+    }
+
+    .home {
+        width: 80%;
+        height: 300px;
+        background-color: black;
+        margin: 3rem auto;
+        padding: 1rem;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+
+            .dot {
+                height: 20px;
+                min-width: 20px;
+                background-color: gray;
+                border-radius: 50%;
+            }
+
+            .text {
+                color: gray;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .more-buttons {
+        width: 80%;
+        height: 300px;
+        background-color: black;
+        margin: 3rem auto;
+        padding: 1rem;
+
+        .more-buttons-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            padding: 0.5rem;
+
+            .more-buttons-dot {
+                height: 20px;
+                min-width: 20px;
+                background-color: gray;
+                border-radius: 50%;
+            }
+
+            .more-buttons-text {
+                color: gray;
+                font-size: 2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
