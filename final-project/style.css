@@ -1,0 +1,105 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+}
+
+.demo {
+    position: relative;
+    width: 621px;
+    height: 385px;
+    border: 1px solid #333;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/creative-process-bg.png);
+    display: flex;
+    overflow: hidden;
+
+    .main {
+        width: 50%;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-weight: 200;
+        }
+
+        .myButton {
+            width: fit-content;
+            margin-top: 20px;
+            background: linear-gradient(to bottom, #ff905c, #ef027d);
+            border-radius: 17px;
+            border: 1px solid #ee1eb5;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: 'Kanit', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            box-shadow: inset 0px 1px 0px 0px #fbafe3;
+            /* transition: all 0.3s ease; */
+
+            &:hover {
+                background: linear-gradient(to bottom, #ef027d, #ff905c);
+            }
+
+            &:active {
+                transform: translateY(1px);
+                position: relative;
+            }
+        }
+
+    }
+
+    .images {
+        width: 50%;
+        height: 100%;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
