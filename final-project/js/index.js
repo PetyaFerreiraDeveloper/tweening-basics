@@ -1,4 +1,5 @@
 import { controlTimeline } from "./controls.js"
+gsap.registerPlugin(GSDevTools)
 
 const initAnimations = () => {
   const tl = gsap.timeline({ paused: true, defaults: { opacity: 0 } })
@@ -13,6 +14,7 @@ const initAnimations = () => {
     })
 
   controlTimeline(tl)
+  GSDevTools.create({ animation: tl })
 }
 
 document.addEventListener("DOMContentLoaded", initAnimations)
