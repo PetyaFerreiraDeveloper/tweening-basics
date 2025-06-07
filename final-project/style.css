@@ -53,12 +53,14 @@ body {
         h2 {
             font-size: 3.5rem;
             font-weight: 500;
+            line-height: 1;
         }
 
         h3 {
-            font-size: 1.25rem;
+            font-size: 2rem;
             font-weight: 400;
             margin-bottom: 1rem;
+            line-height: 1;
         }
 
         p {
