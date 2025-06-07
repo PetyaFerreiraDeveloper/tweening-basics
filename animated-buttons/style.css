@@ -3,6 +3,9 @@
     --secondary-color: #3a452f;
     --ternary-color: #05c1b4;
     --active-color: #063f01;
+    --dark-blue: #0277e0;
+    --light-blue: #78b1ff;
+    --water-blue: #95e0f6;
 }
 
 body {
@@ -138,5 +141,46 @@ main {
                 font-size: 1.5rem;
             }
         }
+    }
+
+    .pulse-hover {
+        background: white;
+        position: relative;
+        width: 300px;
+        height: 250px;
+        border: 1px solid #aaa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-image: url("https://assets.codepen.io/32887/pexels-asad-photo-maldives-1320674.jpg");
+        background-size: cover;
+        margin: 3rem auto;
+
+        .pulse-hover-title {
+            font-size: 2rem;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 800;
+            text-shadow: 1px 1px 3px #333;
+        }
+
+        .pulse-hover-cta {
+            align-self: flex-end;
+            border: none;
+            padding: 1.1rem;
+            border-radius: 12px;
+            background-color: #43A047;
+            color: white;
+            font-size: 1.25rem;
+            transform: scale(0.8);
+            /* Will-change is a hint to the browser that the transform property is going to change, and the browser can optimize the animation */
+            will-change: transform;
+            cursor: pointer;
+        }
+
+
     }
 }
