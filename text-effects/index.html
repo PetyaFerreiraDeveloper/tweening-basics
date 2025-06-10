@@ -8,12 +8,22 @@
   </head>
   <body>
     <main>
-        <h1>Typewritter text effect</h1>
-        <div class="demo">
-            
-        </div>
+      <h1 class="title">Typewriter text effect</h1>
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+      <div class="demo">
+        <p class="second-text"></p>
+        <p class="first-text"></p>
+        <p class="third-text"></p>
+      </div>
     </main>
     <script src="../gsap/gsap.min.js"></script>
     <script type="module" src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
   </body>
 </html>

@@ -19,13 +19,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-}
 
-.controls button {
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: gray;
-    color: white;
+
+    button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: gray;
+        color: white;
+    }
 }
 
 .demo {
