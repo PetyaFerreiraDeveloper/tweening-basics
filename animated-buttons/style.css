@@ -1,30 +1,29 @@
 :root {
-    --primary-color: #063f01;
-    --secondary-color: #3a452f;
-    --ternary-color: #05c1b4;
-    --active-color: #063f01;
-    --dark-blue: #0277e0;
-    --light-blue: #78b1ff;
-    --water-blue: #95e0f6;
+  --primary-color: #063f01;
+  --secondary-color: #3a452f;
+  --ternary-color: #05c1b4;
+  --active-color: #063f01;
+  --dark-blue: #0277e0;
+  --light-blue: #78b1ff;
+  --water-blue: #95e0f6;
 }
 
 body {
-    background: var(--secondary-color);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  background: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    background-color: var(--primary-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-}
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 
-.nav-links {
+  .nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,153 +33,152 @@ header {
     padding: 0;
 
     li {
-        display: flex;
+      display: flex;
 
-        a {
-            text-decoration: none;
-            color: white;
-            padding: 1rem;
-            line-height: 1;
-            display: block;
-            height: 100%;
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        line-height: 1;
+        display: block;
+        height: 100%;
 
-            &:hover {
-                background-color: var(--secondary-color);
-            }
-
-            &.active {
-                background-color: var(--secondary-color);
-            }
+        &:hover {
+          background-color: var(--secondary-color);
         }
+
+        &.active {
+          background-color: var(--secondary-color);
+        }
+      }
     }
+  }
 }
 
 main {
-    margin-top: 100px;
+  margin-top: 100px;
 
-    .title,
-    .subtitle {
-        text-align: center;
-        color: white;
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
+  .title,
+  .subtitle {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 
-    .controls {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  .controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
-    .controls button {
-        padding: 10px 20px;
-        border-radius: 8px;
+  .controls button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+  }
+
+  .home {
+    width: 80%;
+    height: 300px;
+    background-color: black;
+    margin: 3rem auto;
+    padding: 1rem;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      padding: 0.5rem;
+
+      .dot {
+        height: 20px;
+        min-width: 20px;
         background-color: gray;
-        color: white;
+        border-radius: 50%;
+      }
+
+      .text {
+        color: gray;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .more-buttons {
+    width: 80%;
+    height: 300px;
+    background-color: black;
+    margin: 3rem auto;
+    padding: 1rem;
+
+    .more-buttons-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      padding: 0.5rem;
+
+      .more-buttons-dot {
+        height: 20px;
+        min-width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+      }
+
+      .more-buttons-text {
+        color: gray;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .pulse-hover {
+    background: white;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-image: url("https://assets.codepen.io/32887/pexels-asad-photo-maldives-1320674.jpg");
+    background-size: cover;
+    margin: 3rem auto;
+
+    .pulse-hover-title {
+      font-size: 2rem;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 800;
+      text-shadow: 1px 1px 3px #333;
     }
 
-    .home {
-        width: 80%;
-        height: 300px;
-        background-color: black;
-        margin: 3rem auto;
-        padding: 1rem;
-
-        .item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            cursor: pointer;
-            padding: 0.5rem;
-
-            .dot {
-                height: 20px;
-                min-width: 20px;
-                background-color: gray;
-                border-radius: 50%;
-            }
-
-            .text {
-                color: gray;
-                font-size: 2rem;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 1.5rem;
-            }
-        }
+    .pulse-hover-cta {
+      align-self: flex-end;
+      border: none;
+      padding: 1.1rem;
+      border-radius: 12px;
+      background-color: #43a047;
+      color: white;
+      font-size: 1.25rem;
+      transform: scale(0.8);
+      /* Will-change is a hint to the browser that the transform property is going to change, and the browser can optimize the animation */
+      will-change: transform;
+      cursor: pointer;
     }
-
-    .more-buttons {
-        width: 80%;
-        height: 300px;
-        background-color: black;
-        margin: 3rem auto;
-        padding: 1rem;
-
-        .more-buttons-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            cursor: pointer;
-            padding: 0.5rem;
-
-            .more-buttons-dot {
-                height: 20px;
-                min-width: 20px;
-                background-color: gray;
-                border-radius: 50%;
-            }
-
-            .more-buttons-text {
-                color: gray;
-                font-size: 2rem;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 1.5rem;
-            }
-        }
-    }
-
-    .pulse-hover {
-        background: white;
-        position: relative;
-        width: 300px;
-        height: 250px;
-        border: 1px solid #aaa;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background-image: url("https://assets.codepen.io/32887/pexels-asad-photo-maldives-1320674.jpg");
-        background-size: cover;
-        margin: 3rem auto;
-
-        .pulse-hover-title {
-            font-size: 2rem;
-            color: white;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: 800;
-            text-shadow: 1px 1px 3px #333;
-        }
-
-        .pulse-hover-cta {
-            align-self: flex-end;
-            border: none;
-            padding: 1.1rem;
-            border-radius: 12px;
-            background-color: #43A047;
-            color: white;
-            font-size: 1.25rem;
-            transform: scale(0.8);
-            /* Will-change is a hint to the browser that the transform property is going to change, and the browser can optimize the animation */
-            will-change: transform;
-            cursor: pointer;
-        }
-
-
-    }
+  }
 }

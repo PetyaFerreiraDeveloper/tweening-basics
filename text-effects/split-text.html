@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text Effects</title>
+    <title>Split text</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header></header>
     <main>
-      <h1 class="title">Typewriter text effect</h1>
+      <h1 class="title">Split text with split text plugin</h1>
       <!-- Control Buttons -->
       <div class="controls">
         <button class="play">Play</button>
@@ -17,16 +17,15 @@
         <button class="restart">Restart</button>
         <button class="reverse">Reverse</button>
       </div>
-      <div class="demo">
-        <p class="second-text"></p>
-        <p class="first-text"></p>
-        <p class="third-text"></p>
+      <div class="split-text-demo">
+        <p class="split-text-demo-text">Letter by letter animation with GSAP</p>
       </div>
     </main>
     <script src="../gsap/gsap.min.js"></script>
-    <script type="module" src="js/index.js"></script>
     <script type="module" src="js/navigation.js"></script>
+    <script type="module" src="js/split-text.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
   </body>
 </html>
