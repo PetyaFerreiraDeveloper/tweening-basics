@@ -3,6 +3,7 @@ const navigation = `
     <ul class="nav-links">
       <li><a href="/text-effects/">Home</a></li>
       <li><a href="/text-effects/split-text.html">Split text</a></li>
+      <li><a href="/text-effects/split-by-words.html">Split by words</a></li>
     </ul>
 </nav>
 `

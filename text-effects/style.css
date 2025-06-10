@@ -94,10 +94,9 @@ main {
   }
 
   .split-text-demo {
-    .split-text-demo-text {
-      color: white;
-      font-size: 20px;
-      text-align: center;
-    }
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    visibility: hidden;
   }
 }
