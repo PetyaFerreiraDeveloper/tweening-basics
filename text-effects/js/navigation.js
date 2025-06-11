@@ -4,6 +4,7 @@ const navigation = `
       <li><a href="/text-effects/">Home</a></li>
       <li><a href="/text-effects/split-text.html">Split text</a></li>
       <li><a href="/text-effects/split-by-words.html">Split by words</a></li>
+      <li><a href="/text-effects/split-by-lines.html">Split by lines</a></li>
     </ul>
 </nav>
 `

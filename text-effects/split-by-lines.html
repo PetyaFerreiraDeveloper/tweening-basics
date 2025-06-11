@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Split by lines</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="title">Split text by lines with SplitText plugin</h1>
+      <!-- Control Buttons -->
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="restart">Restart</button>
+        <button class="reverse">Reverse</button>
+      </div>
+      <div class="split-text-demo by-lines">
+        <p class="split-by-lines">
+          The Only Way To Do Great Work 
+          Is To Love What You Do. 
+          If You Haven’t Found It Yet, 
+          Keep Looking. Don’t Settle.
+        </p>
+      </div>
+    </main>
+    <script src="../gsap/gsap.min.js"></script>
+    <script type="module" src="js/navigation.js"></script>
+    <script type="module" src="js/split-by-lines.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+  </body>
+</html>

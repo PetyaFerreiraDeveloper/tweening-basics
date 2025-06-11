@@ -98,5 +98,14 @@ main {
     font-size: 20px;
     text-align: center;
     visibility: hidden;
+    margin: 20px auto;
+
+    &.by-lines {
+      width: clamp(350px, 70%, 500px);
+    }
+
+    p {
+      font-size: clamp(20px, 4vw, 36px);
+    }
   }
 }
