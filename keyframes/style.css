@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #063f01;
+  --secondary-color: #3a452f;
+  --ternary-color: #05c1b4;
+  --active-color: #063f01;
+  --dark-blue: #0277e0;
+  --light-blue: #78b1ff;
+  --water-blue: #95e0f6;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  background: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+        line-height: 1;
+        display: block;
+        height: 100%;
+
+        &:hover {
+          background-color: var(--secondary-color);
+        }
+
+        &.active {
+          background-color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 100px;
+
+  .title {
+    color: white;
+    text-align: center;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: gray;
+      color: white;
+    }
+  }
+
+  .keyframes {
+    margin: 100px auto;
+
+    .box {
+      background-color: var(--ternary-color);
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
