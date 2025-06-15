@@ -3,6 +3,7 @@ const navigation = `
     <ul class="nav-links">
       <li><a href="/keyframes/">Home</a></li>
       <li><a href="/keyframes/bouncing-ball.html">Bouncing Ball</a></li>
+      <li><a href="/keyframes/jumping-slime.html">Jumping Slime</a></li>
     </ul>
 </nav>
 `
