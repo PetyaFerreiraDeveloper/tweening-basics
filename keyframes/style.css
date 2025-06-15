@@ -88,5 +88,15 @@ main {
       width: 20px;
       height: 20px;
     }
+
+    .bouncing-ball {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+
+    .shadow {
+      opacity: 0.2;
+    }
   }
 }
