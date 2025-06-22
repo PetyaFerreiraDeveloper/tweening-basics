@@ -3,7 +3,7 @@ gsap.registerPlugin(GSDevTools)
 
 const initAnimation = () => {
   const tl = gsap.timeline({ paused: true })
-  tl.to(".slime", {
+  tl.to(".slimes", {
     keyframes: {
       "25%": { y: 0 },
       "50%": { y: -100, rotate: 0, ease: "sine" },
@@ -12,11 +12,12 @@ const initAnimation = () => {
       "75%": { y: 0, ease: "sine.in" },
       "100%": { x: 320, ease: "none" },
     },
-    duration: 3,
+    duration: 2,
+    stagger: 0.6
   })
 
   controlTimeline(tl)
-  GSDevTools.create({ animation: tl, id: "jumping-slime" })
+  GSDevTools.create({ animation: tl, id: "6-jumping-slimes" })
 }
 
 document.addEventListener("DOMContentLoaded", initAnimation)

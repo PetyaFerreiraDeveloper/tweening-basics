@@ -4,6 +4,7 @@ const navigation = `
       <li><a href="/keyframes/">Home</a></li>
       <li><a href="/keyframes/bouncing-ball.html">Bouncing Ball</a></li>
       <li><a href="/keyframes/jumping-slime.html">Jumping Slime</a></li>
+      <li><a href="/keyframes/6-jumping-slimes.html">6 Jumping Slimes</a></li>
     </ul>
 </nav>
 `
