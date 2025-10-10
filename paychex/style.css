@@ -49,13 +49,11 @@ body {
 }
 
 .image-box {
+  position: relative;
   width: 100%;
   aspect-ratio: 16/11;
+  overflow: hidden;
 }
-
-.image-box.orange, .text-box.orange, .moving-box.orange { background-color: var(--feature-orange); }
-.image-box.green,  .text-box.green,  .moving-box.green  { background-color: var(--feature-green); }
-.image-box.purple, .text-box.purple, .moving-box.purple { background-color: var(--feature-purple); }
 
 .image {
   display: block;
@@ -64,6 +62,17 @@ body {
   object-fit: cover;
   will-change: transform;
 }
+
+.reveal {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  transform-origin: left center; 
+}
+
+.image-box.orange, .text-box.orange, .moving-box.orange, .reveal.orange { background-color: var(--feature-orange); }
+.image-box.green,  .text-box.green,  .moving-box.green,  .reveal.green  { background-color: var(--feature-green); }
+.image-box.purple, .text-box.purple, .moving-box.purple, .reveal.purple { background-color: var(--feature-purple); }
 
 .text-container {
   position: relative;
