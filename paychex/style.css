@@ -6,91 +6,81 @@ html {
   --feature-orange: #FF7033;
   --feature-green: #44C7AD;
   --feature-purple: #AA93F5;
+  --bg-light: antiquewhite;
+  --bg-darker: #d2b48c;
 }
 
 body {
-  background-color: antiquewhite;
+  background-color: var(--bg-light);
 }
 
 .container {
   display: grid;
   place-items: center;
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 .boxes-container {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background-color: var(--bg-darker);
 }
 
+/* 2 per row <= 1024px */
+@media (max-width: 1024px) {
+  .boxes-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 1 per row on small phones */
+@media (max-width: 640px) {
+  .boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Card === */
 .color-box {
-  width: 320px;
-  height: 280px;
+  width: 100%;
   overflow: hidden;
 }
 
 .image-box {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 16/11;
+}
 
-   &.orange {
-    background-color: var(--feature-orange);
-  }
+.image-box.orange, .text-box.orange, .moving-box.orange { background-color: var(--feature-orange); }
+.image-box.green,  .text-box.green,  .moving-box.green  { background-color: var(--feature-green); }
+.image-box.purple, .text-box.purple, .moving-box.purple { background-color: var(--feature-purple); }
 
-    &.green {
-    background-color: var(--feature-green);
-  }
-
-    &.purple {
-    background-color: var(--feature-purple);
-  }
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
 }
 
 .text-container {
   position: relative;
-  width: 320px;
+  width: 100%;
   display: flex;
+  height: clamp(48px, 5.5vw, 60px);
 }
 
 .text-box {
-  width: 220px;
-  height: 60px;
+  flex: 0 0 70%;  
   display: flex;
   align-items: center;
   padding-left: 1rem;
-
-  &.orange {
-    background-color: var(--feature-orange);
-  }
-  
-  &.green {
-    background-color: var(--feature-green);
-  }
-
-  &.purple {
-    background-color: var(--feature-purple);
-  }
 }
 
 .moving-box {
-  width: 100px;
-  height: 60px;
-
-  &.orange {
-    background-color: var(--feature-orange);
-  }
-  
-  &.green {
-    background-color: var(--feature-green);
-  }
-
-  &.purple {
-    background-color: var(--feature-purple);
-  }
+  flex: 0 0 30%;
+  will-change: transform;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
