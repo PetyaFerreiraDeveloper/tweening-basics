@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Color Box</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-
-    <h1>testing for paychex</h1>
-    <div class="color-box">
-      <div class="image-box"></div>
-      <div class="text-box">
-        <span class="text">HR</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Box</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>testing for paychex</h1>
+      <div class="boxes-container">
+        <div class="color-box">
+          <div class="image-box orange">
+            <img class="image" src="orange.png" alt="people talking" />
+          </div>
+          <div class="text-container">
+            <span class="text-box orange">
+              <span class="text"> HR </span>
+            </span>
+            <span class="moving-box orange"></span>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="image-box green">
+            <img class="image" src="green.png" alt="people talking" />
+          </div>
+          <div class="text-container">
+            <span class="text-box green">
+              <span class="text"> HR </span>
+            </span>
+            <span class="moving-box green"></span>
+          </div>
+        </div>
+        <div class="color-box">
+          <div class="image-box purple">
+            <img class="image" src="purple.png" alt="people talking" />
+          </div>
+          <div class="text-container">
+            <span class="text-box purple">
+              <span class="text"> HR </span>
+            </span>
+            <span class="moving-box purple"></span>
+          </div>
+        </div>
       </div>
     </div>
 
-  </div>
-
-
-
-  <script src="../gsap/gsap.min.js"></script>
-  <script type="module" src="js/index.js"></script>
-
-</body>
+    <script src="../gsap/gsap.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>

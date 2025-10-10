@@ -4,6 +4,8 @@
 
 html {
   --feature-orange: #FF7033;
+  --feature-green: #44C7AD;
+  --feature-purple: #AA93F5;
 }
 
 body {
@@ -15,21 +17,80 @@ body {
   place-items: center;
 }
 
+.boxes-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
 .color-box {
-  background-color: var(--feature-orange);
   width: 320px;
   height: 280px;
+  overflow: hidden;
 }
 
 .image-box {
   width: 100%;
   height: 220px;
+
+   &.orange {
+    background-color: var(--feature-orange);
+  }
+
+    &.green {
+    background-color: var(--feature-green);
+  }
+
+    &.purple {
+    background-color: var(--feature-purple);
+  }
+}
+
+.text-container {
+  position: relative;
+  width: 320px;
+  display: flex;
 }
 
 .text-box {
-  width: 100%;
+  width: 220px;
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding-left: 1rem;
+
+  &.orange {
+    background-color: var(--feature-orange);
+  }
+  
+  &.green {
+    background-color: var(--feature-green);
+  }
+
+  &.purple {
+    background-color: var(--feature-purple);
+  }
+}
+
+.moving-box {
+  width: 100px;
+  height: 60px;
+
+  &.orange {
+    background-color: var(--feature-orange);
+  }
+  
+  &.green {
+    background-color: var(--feature-green);
+  }
+
+  &.purple {
+    background-color: var(--feature-purple);
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
