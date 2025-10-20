@@ -7,7 +7,7 @@ const main = gsap
     scrollTrigger: {
       scroller: ".scroll-window",
       trigger: ".svg",
-      scrub: true,
+      scrub: 6,
       start: "top top",
       end: 'max',
     },
