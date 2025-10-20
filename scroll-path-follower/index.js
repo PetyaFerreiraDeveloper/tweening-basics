@@ -20,6 +20,7 @@ const main = gsap
         path: ".theLine",
         align: ".theLine",
         alignOrigin: [0.5, 0.5],
+        autorotate: true,
       },
       duration: 4,
     },
